@@ -1,0 +1,13 @@
+{
+  "itemGroup.fbcm": "Example Mod Tab",
+  "block.fbcm.example_block": "Example Block",
+  "item.fbcm.example_item": "Example Item",
+
+  "fbcm.configuration.title": "Fleshblock Companion Mod Configs",
+  "fbcm.configuration.section.fbcm.common.toml": "Fleshblock Companion Mod Configs",
+  "fbcm.configuration.section.fbcm.common.toml.title": "Fleshblock Companion Mod Configs",
+  "fbcm.configuration.items": "Item List",
+  "fbcm.configuration.logDirtBlock": "Log Dirt Block",
+  "fbcm.configuration.magicNumberIntroduction": "Magic Number Text",
+  "fbcm.configuration.magicNumber": "Magic Number"
+}
