@@ -31,6 +31,10 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+// My classes
+
+import com.tomtaru.fbcm.block.TilledFleshBlock;
+
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(FleshblockCompanionMod.MODID)
 public class FleshblockCompanionMod {
@@ -47,6 +51,7 @@ public class FleshblockCompanionMod {
 
     // Creates a new Block with the id "fbcm:example_block", combining the namespace and path
     public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
+    public static final DeferredBlock<Block> TILLED_FLESH = BLOCKS.registerSimpleBlock("tilled_flesh", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
     // Creates a new BlockItem with the id "fbcm:example_block", combining the namespace and path
     public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
 
