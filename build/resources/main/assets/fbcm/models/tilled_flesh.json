@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "flesh_tilled_side",
-		"1": "flesh_tilled_top",
-		"particle": "flesh_tilled_side"
+		"0": "fbcm:block/flesh_tilled_side",
+		"1": "fbcm:block/flesh_tilled_top",
+		"particle": "fbcm:block/flesh_tilled_side"
 	},
 	"elements": [
 		{

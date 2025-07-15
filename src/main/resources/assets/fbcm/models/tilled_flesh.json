@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "fbcm:block/flesh_tilled_side",
 		"1": "fbcm:block/flesh_tilled_top",
-		"particle": "flesh_tilled_side"
+		"particle": "fbcm:block/flesh_tilled_side"
 	},
 	"elements": [
 		{
