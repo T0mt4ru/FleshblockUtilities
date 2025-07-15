@@ -2,6 +2,7 @@
   "itemGroup.fbcm": "Example Mod Tab",
   "block.fbcm.example_block": "Example Block",
   "item.fbcm.example_item": "Example Item",
+  "block.fbcm.tilled_flesh": "Tilled Flesh",
 
   "fbcm.configuration.title": "Fleshblock Companion Mod Configs",
   "fbcm.configuration.section.fbcm.common.toml": "Fleshblock Companion Mod Configs",

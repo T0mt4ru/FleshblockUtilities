@@ -54,6 +54,7 @@ public class FleshblockCompanionMod {
     public static final DeferredBlock<Block> TILLED_FLESH = BLOCKS.registerSimpleBlock("tilled_flesh", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
     // Creates a new BlockItem with the id "fbcm:example_block", combining the namespace and path
     public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
+    public static final DeferredItem<BlockItem> TILLED_FLESH_ITEM = ITEMS.registerSimpleBlockItem("tilled_flesh", TILLED_FLESH);
 
     // Creates a new food item with the id "fbcm:example_id", nutrition 1 and saturation 2
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
