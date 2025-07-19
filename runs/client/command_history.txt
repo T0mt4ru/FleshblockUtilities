@@ -1,1 +1,37 @@
 /give Dev fbcm:tilled_flesh
+/give Dev fbcm:detritus_ingot 1
+/give Dev minecraft:crafting_table 1
+/give dev fbcm:gristle 64
+/give dev fbcm:tilled_flesh 1
+/time set day
+/gamerule randomTickSpeed 300
+/gamerule randomTickSpeed 3000
+/gamerule randomTickSpeed 3
+/gamerule doDaylightCycle false
+/time set day
+/tick freeze
+/tick rate 1
+/tick step
+/give Dev minecraft:command_block
+/tick unfreeze
+/tick rate 5
+/tick rate 20
+/gamerule randomTickSpeed 10
+/gamerule randomTickSpeed 3
+/weather clear
+/tick freeze
+/tick step
+/tick sprint
+/tick sprint 60s
+/tick sprint 120s
+/weather clear
+/tick sprint 120s
+/tick sprint 60s
+/tick sprint 1d
+/weather clear
+/gamerule doWeatherCycle false
+/tp -3 63 -46
+/tick sprint 1d
+/tick unfreeze
+/give Dev fbcm:detritus_hoe 1
+/give Dev minecraft:water_bucket

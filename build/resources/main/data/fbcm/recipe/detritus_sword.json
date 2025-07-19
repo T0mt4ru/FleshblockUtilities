@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "I"
+  ],
+  "key": {
+    "#": {
+      "item": "fbcm:detritus_ingot"
+    },
+    "I": {
+      "item": "fbcm:gristle"
+    }
+  },
+  "result": {
+    "id": "fbcm:detritus_sword",
+    "count": 1
+  }
+}

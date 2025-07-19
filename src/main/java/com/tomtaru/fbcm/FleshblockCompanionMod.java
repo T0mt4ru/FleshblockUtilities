@@ -1,35 +1,27 @@
 package com.tomtaru.fbcm;
 
-import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
-
+import com.tomtaru.fbcm.block.ModBlocks;
+import com.tomtaru.fbcm.item.ModItems;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
-import net.neoforged.api.distmarker.Dist;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
+import org.slf4j.Logger;
 
 // My classes
 
@@ -54,6 +46,9 @@ public class FleshblockCompanionMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -65,8 +60,24 @@ public class FleshblockCompanionMod {
 
     }
 
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.DETRITUS_AXE);
+            event.accept(ModItems.DETRITUS_HOE);
+            event.accept(ModItems.DETRITUS_PICKAXE);
+            event.accept(ModItems.DETRITUS_SHOVEL);
+            event.accept(ModItems.DETRITUS_SWORD);
+
+        }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.GRISTLE);
+            event.accept(ModItems.DETRITUS_INGOT);
+            event.accept(ModItems.DETRITUS_NUGGET);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.TILLED_FLESH);
+            event.accept(ModBlocks.FLESH_CRAFTING_TABLE);
+        }
 
     }
 
@@ -75,4 +86,19 @@ public class FleshblockCompanionMod {
     public void onServerStarting(ServerStartingEvent event) {
 
     }
+    @SubscribeEvent
+    public void  onHoeUse(BlockEvent.BlockToolModificationEvent event) {
+        if (event.getItemAbility() == ItemAbilities.HOE_TILL) {
+            Level level = (Level) event.getLevel();
+            BlockPos pos = event.getPos();
+            BlockState blockState = event.getState();
+
+            if (blockState.is(BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath("biomesoplenty","flesh")))) {
+            if (event.getContext().getClickedFace() != Direction.DOWN) {
+                event.setFinalState(ModBlocks.TILLED_FLESH.get().defaultBlockState());
+                event.setCanceled(false);
+            }
+        }
+    }
+}
 }

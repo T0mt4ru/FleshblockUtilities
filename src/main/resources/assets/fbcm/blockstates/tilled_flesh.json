@@ -1,5 +1,20 @@
 {
   "variants": {
-    "": {"model": "fbcm:block/tilled_flesh"}
+    "moisture=0": {
+      "model": "fbcm:block/tilled_flesh"},
+    "moisture=1": {
+      "model": "fbcm:block/tilled_flesh"},
+    "moisture=2": {
+      "model": "fbcm:block/tilled_flesh"},
+    "moisture=3": {
+      "model": "fbcm:block/tilled_flesh"},
+    "moisture=4": {
+      "model": "fbcm:block/tilled_flesh"},
+    "moisture=5": {
+      "model": "fbcm:block/tilled_flesh"},
+    "moisture=6": {
+      "model": "fbcm:block/tilled_flesh"},
+    "moisture=7": {
+      "model": "fbcm:block/tilled_flesh_moist"}
   }
 }

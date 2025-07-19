@@ -1,0 +1,25 @@
+{
+	"credit": "Made by Tomtaru with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "fbcm:block/flesh_crafting_table_front",
+		"1": "fbcm:block/flesh_crafting_table_side",
+		"2": "fbcm:block/flesh_crafting_table_top",
+		"3": "fbcm:block/flesh_tilled_side",
+		"particle": "fbcm:block/flesh_tilled_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"}, "cullface": "west",
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#3", "cullface": "down"}
+			}
+		}
+	]
+}
