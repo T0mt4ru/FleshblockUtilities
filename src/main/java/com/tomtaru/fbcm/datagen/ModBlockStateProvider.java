@@ -15,6 +15,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.TILLED_FLESH);
+        blockWithItem((ModBlocks.FLESH_CRAFTING_TABLE));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

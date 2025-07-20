@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fbcm:detritus_ingot"
+    }
+  },
+  "result": {
+    "id": "fbcm:detritus_block",
+    "count": 1
+  }
+}

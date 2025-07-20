@@ -77,6 +77,7 @@ public class FleshblockCompanionMod {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TILLED_FLESH);
             event.accept(ModBlocks.FLESH_CRAFTING_TABLE);
+            event.accept(ModBlocks.DETRITUS_BLOCK);
         }
 
     }

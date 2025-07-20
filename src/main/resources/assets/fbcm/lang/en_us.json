@@ -12,6 +12,7 @@
 
   "block.fbcm.tilled_flesh": "Tilled Flesh",
   "block.fbcm.flesh_crafting_table": "Flesh Crafting Table",
+  "block.fbcm.detritus_block": "Detritus Block",
 
   "fbcm.configuration.title": "Fleshblock Companion Mod Configs",
   "fbcm.configuration.section.fbcm.common.toml": "Fleshblock Companion Mod Configs",

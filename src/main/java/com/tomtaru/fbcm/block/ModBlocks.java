@@ -2,6 +2,7 @@ package com.tomtaru.fbcm.block;
 
 
 import com.tomtaru.fbcm.FleshblockCompanionMod;
+import com.tomtaru.fbcm.custom.block.DetritusBlock;
 import com.tomtaru.fbcm.custom.block.FleshCraftingTable;
 import com.tomtaru.fbcm.custom.block.TilledFleshBlock;
 import com.tomtaru.fbcm.item.ModItems;
@@ -32,6 +33,14 @@ public class ModBlocks {
     public static final DeferredBlock<FleshCraftingTable> FLESH_CRAFTING_TABLE = registerBlock("flesh_crafting_table",
             () -> new FleshCraftingTable(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.CRIMSON_STEM)
+                    .strength(0.6F)
+                    .sound(SoundType.SLIME_BLOCK)
+                    .pushReaction(PushReaction.NORMAL)));
+
+    public static final DeferredBlock<DetritusBlock> DETRITUS_BLOCK = registerBlock("detritus_block",
+            () -> new DetritusBlock(BlockBehaviour.Properties.of()
+                    .mapColor((MapColor.CRIMSON_STEM))
+                    .strength(0.6F)
                     .sound(SoundType.SLIME_BLOCK)
                     .pushReaction(PushReaction.NORMAL)));
 
