@@ -2,45 +2,43 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "conditions": [
         {
           "condition": "minecraft:survives_explosion"
+        },
+        {
+          "block": "biomesoplenty:eyebulb",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "half": "lower"
+          }
         }
       ],
       "entries": [
         {
-          "type": "minecraft:item",
-          "conditions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "block": "biomesoplenty:eyebulb",
-              "condition": "minecraft:block_state_property",
-              "properties": {
-                "half": "lower"
-              }
-            }
-          ],
-          "name": "biomesoplenty:eyebulb"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "fbcm:gristle",
-          "conditions": [
+              "type": "minecraft:item",
+              "name": "fleshblockutilities:gristle",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.50
+                }
+              ]
+            },
             {
-              "condition": "minecraft:random_chance",
-              "chance": 0.50
+              "type": "minecraft:item",
+              "name": "biomesoplenty:eyebulb"
             }
           ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ],
   "random_sequence": "biomesoplenty:blocks/eyebulb"
+}
 }

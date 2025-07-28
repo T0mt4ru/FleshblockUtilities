@@ -466,5 +466,275 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/painting": {
+    "criteria": {
+      "has_wool": "2025-07-21 13:43:49 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_carpet": {
+    "criteria": {
+      "has_white_wool": "2025-07-21 13:43:49 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_banner": {
+    "criteria": {
+      "has_white_wool": "2025-07-21 13:43:49 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_bed": {
+    "criteria": {
+      "has_white_wool": "2025-07-21 13:43:49 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/tools/detritus_hoe": {
+    "criteria": {
+      "has_detritus": "2025-07-21 16:48:34 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/tools/detritus_shears": {
+    "criteria": {
+      "has_detritus": "2025-07-21 17:03:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2025-07-21 17:35:16 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2025-07-21 17:35:16 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_leggings": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_chestplate": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bucket": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_helmet": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/minecart": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_hoe": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:story/smelt_iron": {
+    "criteria": {
+      "iron": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/shears": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chain": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/iron_block": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smithing_table": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_sword": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_pickaxe": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/shield": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/hopper": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/iron_bars": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_boots": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lantern": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_shovel": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_trapdoor": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_axe": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_door": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
+    "criteria": {
+      "has_iron_ingot": "2025-07-21 17:35:20 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/tools/detritus_pickaxe": {
+    "criteria": {
+      "has_detritus": "2025-07-22 11:52:27 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/misc/detritus_ingot_from_nugget": {
+    "criteria": {
+      "has_detritus": "2025-07-22 11:52:27 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/misc/detritus_ingot_from_block": {
+    "criteria": {
+      "has_detritus": "2025-07-22 11:52:27 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/tools/detritus_sword": {
+    "criteria": {
+      "has_detritus": "2025-07-22 11:52:27 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/tools/detritus_shovel": {
+    "criteria": {
+      "has_detritus": "2025-07-22 11:52:27 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/tools/detritus_bucket": {
+    "criteria": {
+      "has_detritus": "2025-07-22 11:52:27 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/building_blocks/detritus_block_from_ingot": {
+    "criteria": {
+      "has_detritus": "2025-07-22 11:52:27 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/tools/detritus_axe": {
+    "criteria": {
+      "has_detritus": "2025-07-22 11:52:27 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/misc/detritus_nugget_from_ingot": {
+    "criteria": {
+      "has_detritus": "2025-07-22 11:52:27 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal_from_bone_block": {
+    "criteria": {
+      "has_bone_block": "2025-07-22 16:56:11 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2025-07-22 16:57:37 +0200"
+    },
+    "done": true
+  },
+  "fleshblockutilities:recipes/misc/drying_rack": {
+    "criteria": {
+      "has_bone_block": "2025-07-23 00:32:41 +0200"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

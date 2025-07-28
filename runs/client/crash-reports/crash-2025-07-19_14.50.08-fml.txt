@@ -18,19 +18,19 @@ Stacktrace:
 Details:
 	Mod file: /C:/Users/sven/Documents/GitHub/FleshblockCompanionMod/build/resources/main/
 	Failure message: Fleshblock Companion Mod (fbcm) has failed to load correctly
-		java.lang.IllegalArgumentException: Expected @SubscribeEvent method public static void com.tomtaru.fbcm.FleshblockCompanionMod.onHoeUse(net.neoforged.neoforge.event.level.BlockEvent$BlockToolModificationEvent) to NOT be static
+		java.lang.IllegalArgumentException: Expected @SubscribeEvent method public static void com.tomtaru.fleshblockutilities.FleshblockUtilities.onHoeUse(net.neoforged.neoforge.event.level.BlockEvent$BlockToolModificationEvent) to NOT be static
 		because register() was called with an instance type.
 		Either make the method non-static, or call register(FleshblockCompanionMod.class).
 		
 	Mod version: 1.0.0
 	Mod issues URL: <No issues URL found>
-	Exception message: java.lang.IllegalArgumentException: Expected @SubscribeEvent method public static void com.tomtaru.fbcm.FleshblockCompanionMod.onHoeUse(net.neoforged.neoforge.event.level.BlockEvent$BlockToolModificationEvent) to NOT be static
+	Exception message: java.lang.IllegalArgumentException: Expected @SubscribeEvent method public static void com.tomtaru.fleshblockutilities.FleshblockUtilities.onHoeUse(net.neoforged.neoforge.event.level.BlockEvent$BlockToolModificationEvent) to NOT be static
 because register() was called with an instance type.
 Either make the method non-static, or call register(FleshblockCompanionMod.class).
 
 Stacktrace:
 	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.register(EventBus.java:124) ~[bus-8.0.5.jar%23154!/:?] {}
-	at TRANSFORMER/fbcm@1.0.0/com.tomtaru.fbcm.FleshblockCompanionMod.<init>(FleshblockCompanionMod.java:47) ~[%23203!/:?] {re:classloading}
+	at TRANSFORMER/fbcm@1.0.0/com.tomtaru.fleshblockutilities.FleshblockUtilities.<init>(FleshblockCompanionMod.java:47) ~[%23203!/:?] {re:classloading}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?] {}
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?] {}
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?] {}

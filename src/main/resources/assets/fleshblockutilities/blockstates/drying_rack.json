@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "fleshblockutilities:block/drying_rack",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "fleshblockutilities:block/drying_rack",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "fleshblockutilities:block/drying_rack",
+      "y": 0
+    },
+    "facing=west": {
+      "model": "fleshblockutilities:block/drying_rack",
+      "y": 90
+    }
+  }
+}

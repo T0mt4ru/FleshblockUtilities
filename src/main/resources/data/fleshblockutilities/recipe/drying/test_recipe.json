@@ -1,0 +1,9 @@
+{
+  "type": "fleshblockutilities:drying_rack",
+  "ingredient": {
+    "item": "minecraft:dirt"
+  },
+  "result": {
+    "id": "minecraft:stone"
+  }
+}

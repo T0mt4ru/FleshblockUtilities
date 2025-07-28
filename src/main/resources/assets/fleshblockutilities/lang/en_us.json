@@ -1,0 +1,31 @@
+{
+  "itemGroup.fleshblockutilities": "Example Mod Tab",
+
+  "item.fleshblockutilities.detritus_nugget": "Detritus Nugget",
+  "item.fleshblockutilities.detritus_ingot": "Detritus Ingot",
+  "item.fleshblockutilities.detritus_axe": "Detritus Axe",
+  "item.fleshblockutilities.detritus_hoe": "Detritus Hoe",
+  "item.fleshblockutilities.detritus_pickaxe": "Detritus Pickaxe",
+  "item.fleshblockutilities.detritus_shovel": "Detritus Shovel",
+  "item.fleshblockutilities.detritus_sword": "Detritus Sword",
+  "item.fleshblockutilities.gristle": "Gristle",
+  "item.fleshblockutilities.detritus_shears": "Detritus Shears",
+  "item.fleshblockutilities.detritus_bucket": "Detritus Bucket",
+  "item.fleshblockutilities.detritus_bucket.filled": "Filled Detritus Bucket",
+  "item.fleshblockutilities.detritus_bucket.entity": "Detritus Bucket",
+
+  "block.fleshblockutilities.tilled_flesh": "Tilled Flesh",
+  "block.fleshblockutilities.flesh_crafting_table": "Flesh Crafting Table",
+  "block.fleshblockutilities.detritus_block": "Detritus Block",
+
+  "block.fleshblockutilities.drying_rack": "Drying_rack",
+
+  "fleshblockutilities.configuration.title": "Fleshblock Utilities Configs",
+  "fleshblockutilities.configuration.section.fleshblockutilities.common.toml": "Fleshblock Utilities Configs",
+  "fleshblockutilities.configuration.section.fleshblockutilities.common.toml.title": "Fleshblock Utilities Configs",
+  "fleshblockutilities.configuration.items": "Item List",
+  "fleshblockutilities.configuration.logDirtBlock": "Log Dirt Block",
+  "fleshblockutilities.configuration.magicNumberIntroduction": "Magic Number Text",
+  "fleshblockutilities.configuration.magicNumber": "Magic Number",
+  "creativetab.fleshblockutilities.fleshblock_utilities": "Fleshblock Utilities"
+}

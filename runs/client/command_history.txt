@@ -1,8 +1,3 @@
-/give Dev fbcm:tilled_flesh
-/give Dev fbcm:detritus_ingot 1
-/give Dev minecraft:crafting_table 1
-/give dev fbcm:gristle 64
-/give dev fbcm:tilled_flesh 1
 /time set day
 /gamerule randomTickSpeed 300
 /gamerule randomTickSpeed 3000
@@ -35,3 +30,21 @@
 /tick unfreeze
 /give Dev fbcm:detritus_hoe 1
 /give Dev minecraft:water_bucket
+/give Dev fbcm:detritus_shears 1
+/give Dev minecraft:shears
+/summon minecraft:sheep ~ ~ ~
+/tp 614 35 -68
+/tp 614 35 -66
+/tp 615 35 -68
+/tp 606 35 -68
+/tp 606 35 -66
+/tp 612 35 -68
+/tp 613 35 -68
+/tp 605 35 -67
+/tp Dev 497 71 32
+/give Dev fleshblockutilities:drying_rack
+/give Dev biomesoplenty:flesh
+/tick sprint 60s
+/time set day
+/tp -18 64 16
+/time set day

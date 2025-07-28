@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "fleshblockutilities:block/tilled_flesh"},
+    "moisture=1": {
+      "model": "fleshblockutilities:block/tilled_flesh"},
+    "moisture=2": {
+      "model": "fleshblockutilities:block/tilled_flesh"},
+    "moisture=3": {
+      "model": "fleshblockutilities:block/tilled_flesh"},
+    "moisture=4": {
+      "model": "fleshblockutilities:block/tilled_flesh"},
+    "moisture=5": {
+      "model": "fleshblockutilities:block/tilled_flesh"},
+    "moisture=6": {
+      "model": "fleshblockutilities:block/tilled_flesh"},
+    "moisture=7": {
+      "model": "fleshblockutilities:block/tilled_flesh_moist"}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fleshblockutilities:detritus_nugget"
+    }
+  },
+  "result": {
+    "id": "fleshblockutilities:detritus_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "bucketlib:item/universal_bucket",
+  "textures": {
+    "base": "fleshblockutilities:item/detritus_bucket",
+    "lowerBase": "fleshblockutilities:item/detritus_bucket",
+    "crackedBase": "fleshblockutilities:item/detritus_bucket",
+    "crackedLowerBase": "fleshblockutilities:item/detritus_bucket"
+  }
+}

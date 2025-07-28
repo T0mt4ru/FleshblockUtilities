@@ -53,7 +53,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fbcm:detritus_nugget",
+          "name": "fleshblockutilities:detritus_nugget",
           "conditions": [
             {
               "condition": "minecraft:random_chance",

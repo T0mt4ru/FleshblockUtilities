@@ -1,0 +1,9 @@
+{
+  "type": "fleshblockutilities:drying_rack",
+  "ingredient": {
+    "item": "biomesoplenty:flesh_tendons"
+  },
+  "result": {
+    "id": "minecraft:dried_kelp"
+  }
+}

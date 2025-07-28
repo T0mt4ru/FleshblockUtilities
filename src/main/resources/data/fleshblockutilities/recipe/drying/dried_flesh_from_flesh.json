@@ -1,0 +1,15 @@
+{
+  "neoforge:conditions": [
+    {
+      "type":"neoforge:mod_loaded",
+      "modid": "ihfr_fo"
+    }
+  ],
+  "type": "fleshblockutilities:drying_rack",
+  "ingredient": {
+    "item": "biomesoplenty:flesh"
+  },
+  "result": {
+    "id": "ihfr_fo:flesh_block"
+  }
+}
