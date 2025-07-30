@@ -2,14 +2,12 @@ package com.tomtaru.fleshblockutilities.block;
 
 
 import com.tomtaru.fleshblockutilities.FleshblockUtilities;
-import com.tomtaru.fleshblockutilities.custom.block.DetritusBlock;
-import com.tomtaru.fleshblockutilities.custom.block.DryingRackBlock;
-import com.tomtaru.fleshblockutilities.custom.block.FleshCraftingTable;
-import com.tomtaru.fleshblockutilities.custom.block.TilledFleshBlock;
+import com.tomtaru.fleshblockutilities.custom.block.*;
 import com.tomtaru.fleshblockutilities.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -52,6 +50,9 @@ public class ModBlocks {
                     .strength(1F)
                     .sound(SoundType.BONE_BLOCK)
                     .pushReaction(PushReaction.IGNORE)));
+
+    public static final DeferredBlock<Block> HAIR_GROWTH = registerBlock("hair_growth",
+            () -> new HairGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

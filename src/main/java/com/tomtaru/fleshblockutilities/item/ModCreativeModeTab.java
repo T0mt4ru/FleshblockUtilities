@@ -35,6 +35,8 @@ public class ModCreativeModeTab {
 
                         output.accept(ModBlocks.DRYING_RACK);
 
+                        output.accept(ModItems.HAIR_FOLLICLES);
+
                     }).build()
     );
 

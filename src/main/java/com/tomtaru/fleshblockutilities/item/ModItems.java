@@ -1,6 +1,7 @@
 package com.tomtaru.fleshblockutilities.item;
 
 import com.tomtaru.fleshblockutilities.FleshblockUtilities;
+import com.tomtaru.fleshblockutilities.block.ModBlocks;
 import com.tomtaru.fleshblockutilities.custom.item.ModToolTier;
 import de.cech12.bucketlib.api.item.UniversalBucketItem;
 import net.minecraft.core.component.DataComponents;
@@ -14,6 +15,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> GRISTLE = ITEMS.register("gristle",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> HAIR_STRAND = ITEMS.register("hair_strand",
+            () -> new Item(new Item.Properties()));
+
 //Detritus components
     public static final DeferredItem<Item> DETRITUS_NUGGET = ITEMS.register("detritus_nugget",
             () -> new Item(new Item.Properties()));
@@ -45,7 +50,11 @@ public class ModItems {
             () -> new ShearsItem(new Item.Properties().durability(100).component(DataComponents.TOOL, ShearsItem.createToolProperties())));
 
     public static final DeferredItem<Item> DETRITUS_BUCKET = ITEMS.register("detritus_bucket",
-            () ->new UniversalBucketItem(new UniversalBucketItem.Properties()));
+            () -> new UniversalBucketItem(new UniversalBucketItem.Properties()));
+
+    // "Seed" items
+    public static final DeferredItem<Item> HAIR_FOLLICLES = ITEMS.register("hair_follicles",
+            () -> new ItemNameBlockItem(ModBlocks.HAIR_GROWTH.get(), new  Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

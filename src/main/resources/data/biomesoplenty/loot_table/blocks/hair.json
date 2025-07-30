@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "biomesoplenty:hair",
+          "name": "fleshblockutilities:hair_follicles",
           "conditions": [
             {
               "condition": "minecraft:random_chance",

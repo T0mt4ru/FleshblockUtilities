@@ -13,13 +13,17 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_DETRITUS_TOOL = createTag("needs_detritus_tool");
         public static final TagKey<Block> INCORRECT_FOR_DETRITUS_TOOL = createTag("incorrect_for_detritus_tool");
 
+        // Methods
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(FleshblockUtilities.MODID, name));
         }
     }
     public static class Items {
-        public static final TagKey<Item> SHEARS = importTag("biomesoplenty", "shears");
 
+        public static final TagKey<Item> SHEARS = importTag("biomesoplenty", "shears");
+        public static final TagKey<Item> STRINGS = importTag("c", "strings");
+
+        // Methods
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(FleshblockUtilities.MODID, name));
         }

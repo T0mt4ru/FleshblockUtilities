@@ -108,8 +108,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DRYING_RACK.get())
-                .pattern("#-#")
-                .pattern("# #")
+                .pattern("---")
                 .pattern("###")
                 .define('#', Blocks.BONE_BLOCK)
                 .define('-', ModItems.GRISTLE.get())

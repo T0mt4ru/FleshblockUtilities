@@ -22,12 +22,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
+        // Vanilla tags
         tag(ItemTags.SWORDS).add(ModItems.DETRITUS_SWORD.get());
         tag(ItemTags.HOES).add(ModItems.DETRITUS_HOE.get());
         tag(ItemTags.AXES).add(ModItems.DETRITUS_AXE.get());
         tag(ItemTags.SHOVELS).add(ModItems.DETRITUS_SHOVEL.get());
         tag(ItemTags.PICKAXES).add(ModItems.DETRITUS_PICKAXE.get());
+
+        // Modded tags
         tag(ModTags.Items.SHEARS).add(ModItems.DETRITUS_SHEARS.get());
+        tag(ModTags.Items.STRINGS).add(ModItems.HAIR_STRAND.get());
 
     }
 }
