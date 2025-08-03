@@ -25,7 +25,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.DETRITUS_BLOCK.get())
                 .add(ModBlocks.FLESH_CRAFTING_TABLE.get())
-                .add(ModBlocks.TILLED_FLESH.get());
+                .add(ModBlocks.TILLED_FLESH.get())
+                .add(ModBlocks.FLESH_CHEST.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.DRYING_RACK.get());

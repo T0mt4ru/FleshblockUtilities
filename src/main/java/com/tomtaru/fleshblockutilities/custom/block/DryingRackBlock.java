@@ -31,7 +31,7 @@ public class DryingRackBlock extends BaseEntityBlock {
 
     public DryingRackBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState((this.stateDefinition.any().setValue(FACING, Direction.NORTH)));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 

@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type":"neoforge:mod_loaded",
+      "modid": "ihfr_fo"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "B#B"
+  ],
+  "key": {
+    "#": {
+      "item": "ihfr_fo:flesh_block"
+    },
+    "B": {
+      "item": "minecraft:bone_block"
+    }
+  },
+  "result": {
+    "id": "fleshblockutilities:flesh_chest",
+    "count": 1
+  }
+}

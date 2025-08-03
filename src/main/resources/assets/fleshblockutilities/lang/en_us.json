@@ -14,13 +14,17 @@
   "item.fleshblockutilities.detritus_bucket.filled": "Filled Detritus Bucket",
   "item.fleshblockutilities.detritus_bucket.entity": "Detritus Bucket",
   "item.fleshblockutilities.hair_follicles": "Hair Follicles",
+  "block.fleshblockutilities.hair_follicles": "Hair Growth",
   "item.fleshblockutilities.hair_strand": "Hair Strand",
 
   "block.fleshblockutilities.tilled_flesh": "Tilled Flesh",
   "block.fleshblockutilities.flesh_crafting_table": "Flesh Crafting Table",
   "block.fleshblockutilities.detritus_block": "Detritus Block",
 
-  "block.fleshblockutilities.drying_rack": "Drying_rack",
+  "block.fleshblockutilities.drying_rack": "Drying Rack",
+  "block.fleshblockutilities.flesh_chest": "Flesh Pod",
+
+  "container.fleshblockutilities.flesh_chest": "Flesh Pod",
 
   "fleshblockutilities.configuration.title": "Fleshblock Utilities Configs",
   "fleshblockutilities.configuration.section.fleshblockutilities.common.toml": "Fleshblock Utilities Configs",

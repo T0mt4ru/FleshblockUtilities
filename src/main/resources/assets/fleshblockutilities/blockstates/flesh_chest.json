@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=up":    {
+      "model": "fleshblockutilities:block/flesh_chest"
+    },
+    "facing=down":  {
+      "model": "fleshblockutilities:block/flesh_chest",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "fleshblockutilities:block/flesh_chest",
+      "x": 90
+    },
+    "facing=east":  {
+      "model": "fleshblockutilities:block/flesh_chest",
+      "x": 90,
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fleshblockutilities:block/flesh_chest",
+      "x": 90,
+      "y": 180
+    },
+    "facing=west":  {
+      "model": "fleshblockutilities:block/flesh_chest",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

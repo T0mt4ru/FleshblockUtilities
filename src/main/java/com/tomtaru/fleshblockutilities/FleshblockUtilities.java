@@ -90,6 +90,7 @@ public class FleshblockUtilities {
             event.accept(ModItems.GRISTLE);
             event.accept(ModItems.DETRITUS_INGOT);
             event.accept(ModItems.DETRITUS_NUGGET);
+            event.accept((ModItems.HAIR_STRAND));
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TILLED_FLESH);

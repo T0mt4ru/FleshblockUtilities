@@ -2,21 +2,21 @@
 	"credit": "Made by Tomtaru with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "fleshblockutilities:block/flesh_tilled_side",
-		"1": "fleshblockutilities:block/flesh_tilled_top",
-		"particle": "fleshblockutilities:block/flesh_tilled_side"
+		"side": "biomesoplenty:block/flesh",
+		"top": "fleshblockutilities:block/flesh_tilled_top",
+		"particle": "biomesoplenty:block/flesh"
 	},
 	"elements": [
 		{
 			"from": [0, 0, 0],
 			"to": [16, 15, 16],
 			"faces": {
-				"north": {"uv": [0, 1, 16, 16], "texture": "#0", "cullface": "north"},
-				"east": {"uv": [0, 1, 16, 16], "texture": "#0", "cullface":  "east"},
-				"south": {"uv": [0, 1, 16, 16], "texture": "#0", "cullface": "south"},
-				"west": {"uv": [0, 1, 16, 16], "texture": "#0", "cullface":  "west"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#0", "cullface":  "down"}
+				"north": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface":  "east"},
+				"south": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface":  "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface":  "down"}
 			}
 		}
 	]

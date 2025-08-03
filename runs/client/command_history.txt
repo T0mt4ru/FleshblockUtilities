@@ -1,5 +1,3 @@
-/tick freeze
-/tick rate 1
 /tick step
 /give Dev minecraft:command_block
 /tick unfreeze
@@ -48,3 +46,5 @@
 /execute in minecraft:the_nether run tp Dev 0 64 0
 /locate biome biomesoplenty:visceral_heap
 /tp @s 246 50 452
+/give dev fleshblockutilities:flesh_chest 1
+/give Dev fleshblockutilities:flesh_chest

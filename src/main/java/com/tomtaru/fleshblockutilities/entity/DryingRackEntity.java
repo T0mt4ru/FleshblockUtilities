@@ -99,7 +99,6 @@ public class DryingRackEntity extends BlockEntity {
         tag.put("inventory", inventory.serializeNBT(registries));
         tag.putInt("drying_rack.progress", progress);
         tag.putInt("drying_rack.max_progress", maxProgress);
-
     }
 
     @Override

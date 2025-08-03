@@ -21,6 +21,8 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(FleshblockUtilities.MODID);
 
+    // Blocks
+
     public static final DeferredBlock<TilledFleshBlock> TILLED_FLESH = registerBlock("tilled_flesh",
             () -> new TilledFleshBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_RED)
@@ -43,6 +45,16 @@ public class ModBlocks {
                     .sound(SoundType.SLIME_BLOCK)
                     .pushReaction(PushReaction.NORMAL)));
 
+    // BlockEntities
+
+    public static final DeferredBlock<FleshChestBlock> FLESH_CHEST = registerBlock("flesh_chest",
+            () -> new FleshChestBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .mapColor(MapColor.COLOR_BROWN)
+                    .strength(1.5F)
+                    .sound(SoundType.MUD)
+                    .pushReaction(PushReaction.DESTROY)));
+
     public static final DeferredBlock<DryingRackBlock> DRYING_RACK = registerBlock("drying_rack",
             () -> new DryingRackBlock(BlockBehaviour.Properties.of()
                     .noOcclusion()
@@ -50,6 +62,8 @@ public class ModBlocks {
                     .strength(1F)
                     .sound(SoundType.BONE_BLOCK)
                     .pushReaction(PushReaction.IGNORE)));
+
+    // "Crops"
 
     public static final DeferredBlock<Block> HAIR_GROWTH = registerBlock("hair_growth",
             () -> new HairGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));

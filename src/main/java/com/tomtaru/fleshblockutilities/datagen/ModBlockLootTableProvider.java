@@ -29,6 +29,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DETRITUS_BLOCK.get());
         dropSelf(ModBlocks.FLESH_CRAFTING_TABLE.get());
         dropSelf(ModBlocks.DRYING_RACK.get());
+        dropSelf(ModBlocks.FLESH_CHEST.get());
 
         //blocks that don't drop themselves
         dropOther(ModBlocks.TILLED_FLESH.get(), BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath("biomesoplenty","flesh")));

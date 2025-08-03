@@ -1,6 +1,6 @@
 {
   "variants": {
     "": {
-      "model": "fbcm:block/detritus_block"}
+      "model": "fleshblockutilities:block/detritus_block"}
   }
 }
