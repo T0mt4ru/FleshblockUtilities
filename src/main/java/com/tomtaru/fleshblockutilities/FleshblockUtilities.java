@@ -2,6 +2,8 @@ package com.tomtaru.fleshblockutilities;
 
 import com.mojang.logging.LogUtils;
 import com.tomtaru.fleshblockutilities.block.ModBlocks;
+import com.tomtaru.fleshblockutilities.compat.ModMountedStorage;
+import com.tomtaru.fleshblockutilities.entity.FleshChestEntity;
 import com.tomtaru.fleshblockutilities.entity.ModBlockEntity;
 import com.tomtaru.fleshblockutilities.entity.renderer.DryingRackEntityRenderer;
 import com.tomtaru.fleshblockutilities.item.ModCreativeModeTab;
@@ -70,6 +72,11 @@ public class FleshblockUtilities {
 
         // Register an bucket?
         modEventBus.addListener(this::sendImc);
+
+        // Register mounted storage
+        modEventBus.addListener(this::registerCapabilities);
+
+        ModMountedStorage.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -126,6 +133,11 @@ public class FleshblockUtilities {
             }
         }
     }
+
+    private void registerCapabilities(RegisterCapabilitiesEvent event) {
+        FleshChestEntity.registerCapabilities(event);
+    }
+
     @EventBusSubscriber(modid = FleshblockUtilities.MODID)
     public static class ClientModEvents {
         @SubscribeEvent

@@ -115,5 +115,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_bone_block", has(Blocks.BONE_BLOCK))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.KERATITE_INGOT.get())
+                .pattern(" - ")
+                .pattern("-#-")
+                .pattern(" - ")
+                .define('#', ModItems.DETRITUS_INGOT.get())
+                .define('-', ModItems.HAIR_STRAND.get())
+                .unlockedBy("has_hair_strand", has(ModItems.HAIR_STRAND))
+                .save(recipeOutput);
+
     }
 }

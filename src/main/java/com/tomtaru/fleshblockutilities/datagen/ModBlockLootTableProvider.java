@@ -10,6 +10,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -33,6 +34,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         //blocks that don't drop themselves
         dropOther(ModBlocks.TILLED_FLESH.get(), BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath("biomesoplenty","flesh")));
+
+        add(ModBlocks.IRON_DEPOSIT.get(),
+                block -> createOreDrop(ModBlocks.IRON_DEPOSIT.get(), Items.RAW_IRON.asItem()));
+
+        //blocks that drop with Silk Touch
+        //dropWhenSilkTouch(ModBlocks.IRON_DEPOSIT.get());
 
         //"crops"
         LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.HAIR_GROWTH.get())

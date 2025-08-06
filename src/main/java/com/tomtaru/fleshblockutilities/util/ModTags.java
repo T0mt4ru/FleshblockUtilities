@@ -22,6 +22,7 @@ public class ModTags {
 
         public static final TagKey<Item> SHEARS = importTag("biomesoplenty", "shears");
         public static final TagKey<Item> STRINGS = importTag("c", "strings");
+        public static final TagKey<Item> INGOTS = importTag("c", "ingots");
 
         // Methods
         private static TagKey<Item> createTag(String name) {

@@ -18,6 +18,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.DETRITUS_INGOT.get());
         basicItem(ModItems.HAIR_FOLLICLES.get());
         basicItem(ModItems.HAIR_STRAND.get());
+        basicItem(ModItems.CORPUSITE_INGOT.get());
+        basicItem(ModItems.KERATITE_INGOT.get());
 
         handheldItem(ModItems.DETRITUS_AXE.get());
         handheldItem(ModItems.DETRITUS_PICKAXE.get());

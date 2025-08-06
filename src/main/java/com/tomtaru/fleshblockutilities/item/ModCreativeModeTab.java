@@ -19,6 +19,8 @@ public class ModCreativeModeTab {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DETRITUS_INGOT.get()))
                     .title(Component.translatable("creativetab.fleshblockutilities.fleshblock_utilities"))
                     .displayItems((itemDisplayParameters, output) ->{
+                        output.accept(ModItems.DETRITUS_NUGGET);
+                        output.accept(ModItems.DETRITUS_INGOT);
                         output.accept(ModItems.DETRITUS_AXE);
                         output.accept(ModItems.DETRITUS_BUCKET);
                         output.accept(ModItems.DETRITUS_HOE);
@@ -29,9 +31,13 @@ public class ModCreativeModeTab {
                         output.accept(ModItems.DETRITUS_SHOVEL);
                         output.accept(ModItems.DETRITUS_SWORD);
 
+                        output.accept(ModItems.CORPUSITE_INGOT);
+                        output.accept(ModItems.KERATITE_INGOT);
+
                         output.accept(ModBlocks.DETRITUS_BLOCK);
                         output.accept(ModBlocks.FLESH_CRAFTING_TABLE);
                         output.accept(ModBlocks.TILLED_FLESH);
+                        output.accept(ModBlocks.IRON_DEPOSIT);
 
                         output.accept(ModBlocks.DRYING_RACK);
 

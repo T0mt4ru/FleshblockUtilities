@@ -4,10 +4,12 @@ package com.tomtaru.fleshblockutilities.block;
 import com.tomtaru.fleshblockutilities.FleshblockUtilities;
 import com.tomtaru.fleshblockutilities.custom.block.*;
 import com.tomtaru.fleshblockutilities.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -38,11 +40,19 @@ public class ModBlocks {
                     .sound(SoundType.SLIME_BLOCK)
                     .pushReaction(PushReaction.NORMAL)));
 
-    public static final DeferredBlock<DetritusBlock> DETRITUS_BLOCK = registerBlock("detritus_block",
-            () -> new DetritusBlock(BlockBehaviour.Properties.of()
+    public static final DeferredBlock<Block> DETRITUS_BLOCK = registerBlock("detritus_block",
+            () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.CRIMSON_STEM)
                     .strength(0.6F)
                     .sound(SoundType.SLIME_BLOCK)
+                    .pushReaction(PushReaction.NORMAL)));
+
+    public static final DeferredBlock<Block> IRON_DEPOSIT = registerBlock("iron_deposit",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.COLOR_RED)
+                    .strength(1.6F)
+                    .sound(SoundType.MUD)
                     .pushReaction(PushReaction.NORMAL)));
 
     // BlockEntities

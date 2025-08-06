@@ -26,7 +26,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DETRITUS_BLOCK.get())
                 .add(ModBlocks.FLESH_CRAFTING_TABLE.get())
                 .add(ModBlocks.TILLED_FLESH.get())
-                .add(ModBlocks.FLESH_CHEST.get());
+                .add(ModBlocks.FLESH_CHEST.get())
+                .add(ModBlocks.IRON_DEPOSIT.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.DRYING_RACK.get());
@@ -36,7 +37,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         //Modded Tags
         tag(ModTags.Blocks.NEEDS_DETRITUS_TOOL)
-                .addTag(BlockTags.NEEDS_STONE_TOOL);
+                .addTag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.IRON_DEPOSIT.get());
 
         tag(ModTags.Blocks.INCORRECT_FOR_DETRITUS_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_STONE_TOOL)

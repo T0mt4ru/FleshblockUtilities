@@ -15,6 +15,8 @@ import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.items.ItemStackHandler;
 
 public class FleshChestEntity extends BaseContainerBlockEntity {
@@ -28,7 +30,13 @@ public class FleshChestEntity extends BaseContainerBlockEntity {
         }
 
     public FleshChestEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntity.FLESH_CHEST_BE.get(), pos, state);
+
+            super(ModBlockEntity.FLESH_CHEST_BE.get(), pos, state);
+    }
+
+    public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+            event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ModBlockEntity.FLESH_CHEST_BE.get(),
+                    (blockEntity, side) -> blockEntity.inventory);
     }
 
     @Override
@@ -52,7 +60,8 @@ public class FleshChestEntity extends BaseContainerBlockEntity {
 
     @Override
     public int getContainerSize() {
-        return inventory.getSlots();
+
+            return inventory.getSlots();
     }
 
     @Override
@@ -67,17 +76,30 @@ public class FleshChestEntity extends BaseContainerBlockEntity {
 
     @Override
     public ItemStack getItem(int index) {
-        return inventory.getStackInSlot(index);
+
+            return inventory.getStackInSlot(index);
+    }
+
+    @Override
+    public ItemStack removeItem(int index, int count) {
+        ItemStack result = inventory.extractItem(index, count, false);
+        if (!result.isEmpty()) {
+            setChanged();
+        }
+        return result;
     }
 
     @Override
     public ItemStack removeItemNoUpdate(int index) {
-        return inventory.extractItem(index, 1, true);
+
+            return inventory.extractItem(index, inventory.getStackInSlot(index).getCount(), false);
     }
 
     @Override
     public void setItem(int index, ItemStack stack) {
-        inventory.setStackInSlot(index, stack);
+
+            inventory.setStackInSlot(index, stack);
+            setChanged();
     }
 
     @Override
@@ -89,7 +111,8 @@ public class FleshChestEntity extends BaseContainerBlockEntity {
 
     @Override
     public boolean stillValid(Player player) {
-        return Container.stillValidBlockEntity(this, player);
+
+            return Container.stillValidBlockEntity(this, player);
     }
 
     @Override

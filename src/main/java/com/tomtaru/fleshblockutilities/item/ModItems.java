@@ -52,6 +52,13 @@ public class ModItems {
     public static final DeferredItem<Item> DETRITUS_BUCKET = ITEMS.register("detritus_bucket",
             () -> new UniversalBucketItem(new UniversalBucketItem.Properties()));
 
+    // Corpusite components
+    public static final DeferredItem<Item> CORPUSITE_INGOT = ITEMS.register("corpusite_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> KERATITE_INGOT = ITEMS.register("keratite_ingot",
+            () -> new Item(new Item.Properties()));
+
     // "Seed" items
     public static final DeferredItem<Item> HAIR_FOLLICLES = ITEMS.register("hair_follicles",
             () -> new ItemNameBlockItem(ModBlocks.HAIR_GROWTH.get(), new  Item.Properties()));

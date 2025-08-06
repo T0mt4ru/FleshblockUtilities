@@ -32,6 +32,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         // Modded tags
         tag(ModTags.Items.SHEARS).add(ModItems.DETRITUS_SHEARS.get());
         tag(ModTags.Items.STRINGS).add(ModItems.HAIR_STRAND.get());
+        tag(ModTags.Items.INGOTS)
+                .add(ModItems.DETRITUS_INGOT.get())
+                .add(ModItems.CORPUSITE_INGOT.get())
+                .add(ModItems.KERATITE_INGOT.get());
+
 
     }
 }
