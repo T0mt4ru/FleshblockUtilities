@@ -1,0 +1,121 @@
+{
+  "carvers": {
+    "air": "minecraft:nether_cave"
+  },
+  "downfall": 0.0,
+  "effects": {
+    "additions_sound": {
+      "sound": "minecraft:ambient.crimson_forest.additions",
+      "tick_chance": 0.0111
+    },
+    "ambient_sound": "ihfr_fo:ambient.hell",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.soul_sand_valley.mood",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": true,
+      "sound": "ihfr_fo:ambient.hell"
+    },
+    "particle": {
+      "options": {
+        "type": "crimson_spore"
+      },
+      "probability": 0.0035
+    },
+    "foliage_color": -12108745,
+    "grass_color": -9546163,
+    "sky_color": 0,
+    "fog_color": -12767191,
+    "water_color": -10073793,
+    "water_fog_color": -12373460
+  },
+  "features": [
+    ["macabre:bone_2"],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:spring_closed",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_diamond",
+      "minecraft:ore_lapis",
+      "minecraft:ore_redstone",
+      "minecraft:ore_ancient_debris_large",
+      "minecraft:ore_debris_small",
+      "biomesoplenty:blood_lake",
+      "biomesoplenty:blood_spring",
+      "biomesoplenty:nether_bone_spine",
+      "biomesoplenty:flesh_tendon",
+      "biomesoplenty:hanging_flesh_tendons",
+      "biomesoplenty:porous_flesh",
+      "biomesoplenty:pus_bubbles",
+      "biomesoplenty:eyebulb",
+      "biomesoplenty:hair"
+    ],
+    [],
+    [ "macabre:bone_1",
+      "macabre:bone_3",
+      "macabre:bone_spikes"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [
+    ],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "macabre:fly",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "macabre:worm",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 10
+      }
+    ],
+    "misc": [
+      {
+        "type": "macabre:fernrot",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 1
+      }
+    ],
+    "monster": [
+      {
+        "type": "ihfr_fo:clump",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "macabre:witness",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 1
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 2.0
+}

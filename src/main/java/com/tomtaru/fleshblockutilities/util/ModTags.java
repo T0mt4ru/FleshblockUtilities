@@ -1,23 +1,28 @@
 package com.tomtaru.fleshblockutilities.util;
 
 import com.tomtaru.fleshblockutilities.FleshblockUtilities;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 
 public class ModTags {
+
     public static class Blocks {
         public static final TagKey<Block> NEEDS_DETRITUS_TOOL = createTag("needs_detritus_tool");
         public static final TagKey<Block> INCORRECT_FOR_DETRITUS_TOOL = createTag("incorrect_for_detritus_tool");
+        public static final TagKey<Block> FLESH_DEPOSIT_REPLACEABLES = createTag("flesh_deposit_replaceables");
 
         // Methods
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(FleshblockUtilities.MODID, name));
         }
     }
+
     public static class Items {
 
         public static final TagKey<Item> SHEARS = importTag("biomesoplenty", "shears");
@@ -29,7 +34,17 @@ public class ModTags {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(FleshblockUtilities.MODID, name));
         }
         private static TagKey<Item> importTag(String modName, String tagName) {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath((modName), tagName));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(modName, tagName));
+        }
+    }
+
+    public static class Biomes {
+
+        public static final TagKey<Biome> IS_THULMARU = createTag("is_thulmaru");
+
+        //Methods
+        private static TagKey<Biome> createTag(String name) {
+            return TagKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath(FleshblockUtilities.MODID, name));
         }
     }
 }

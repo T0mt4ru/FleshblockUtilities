@@ -124,5 +124,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_hair_strand", has(ModItems.HAIR_STRAND))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NEPHROLITH_BLOCK.get())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModItems.NEPHROLITH_SHARD.get())
+                .unlockedBy("has_nephrolith_shard", has(ModItems.NEPHROLITH_SHARD))
+                .save(recipeOutput);
+
     }
 }

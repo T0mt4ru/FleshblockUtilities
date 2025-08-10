@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "fleshblockutilities:block/large_nephrolith_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "fleshblockutilities:block/large_nephrolith_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "fleshblockutilities:block/large_nephrolith_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "fleshblockutilities:block/large_nephrolith_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "fleshblockutilities:block/large_nephrolith_bud"
+    },
+    "facing=west": {
+      "model": "fleshblockutilities:block/large_nephrolith_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

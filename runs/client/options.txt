@@ -35,7 +35,7 @@ chatLinksPrompt:true
 discrete_mouse_scroll:false
 invertYMouse:false
 realmsNotifications:true
-showSubtitles:false
+showSubtitles:true
 directionalAudio:false
 touchscreen:false
 bobView:true
@@ -167,7 +167,7 @@ soundCategory_master:0.2052980132450331
 soundCategory_music:0.056338028169014086
 soundCategory_record:1.0
 soundCategory_weather:1.0
-soundCategory_block:1.0
+soundCategory_block:0.05985915492957746
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0
 soundCategory_player:1.0

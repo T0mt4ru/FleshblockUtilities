@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "fleshblockutilities:block/nephrolith_block"
+  }
+}

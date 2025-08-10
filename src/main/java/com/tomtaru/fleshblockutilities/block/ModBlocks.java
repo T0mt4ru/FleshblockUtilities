@@ -3,14 +3,12 @@ package com.tomtaru.fleshblockutilities.block;
 
 import com.tomtaru.fleshblockutilities.FleshblockUtilities;
 import com.tomtaru.fleshblockutilities.custom.block.*;
+import com.tomtaru.fleshblockutilities.custom.block.BuddingNephrolithBlock;
 import com.tomtaru.fleshblockutilities.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -55,6 +53,22 @@ public class ModBlocks {
                     .sound(SoundType.MUD)
                     .pushReaction(PushReaction.NORMAL)));
 
+    public static final DeferredBlock<AmethystClusterBlock> SMALL_NEPHROLITH_BUD = registerBlock("small_nephrolith_bud",
+            () -> new AmethystClusterBlock(3, 4, BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD)));
+
+    public static final DeferredBlock<AmethystClusterBlock> MEDIUM_NEPHROLITH_BUD = registerBlock("medium_nephrolith_bud",
+            () -> new AmethystClusterBlock(4, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD)));
+
+    public static final DeferredBlock<AmethystClusterBlock> LARGE_NEPHROLITH_BUD = registerBlock("large_nephrolith_bud",
+            () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
+
+    public static final DeferredBlock<AmethystClusterBlock> NEPHROLITH_CLUSTER = registerBlock("nephrolith_cluster",
+            () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_CLUSTER)));
+
+    public static final DeferredBlock<Block> NEPHROLITH_BLOCK = registerBlock("nephrolith_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+
+
     // BlockEntities
 
     public static final DeferredBlock<FleshChestBlock> FLESH_CHEST = registerBlock("flesh_chest",
@@ -72,6 +86,9 @@ public class ModBlocks {
                     .strength(1F)
                     .sound(SoundType.BONE_BLOCK)
                     .pushReaction(PushReaction.IGNORE)));
+
+    public static final DeferredBlock<BuddingNephrolithBlock> BUDDING_NEPHROLITH = registerBlock("budding_nephrolith",
+            () -> new BuddingNephrolithBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BUDDING_AMETHYST)));
 
     // "Crops"
 

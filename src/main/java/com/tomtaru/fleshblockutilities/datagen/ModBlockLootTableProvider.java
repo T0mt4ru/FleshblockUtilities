@@ -31,6 +31,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.FLESH_CRAFTING_TABLE.get());
         dropSelf(ModBlocks.DRYING_RACK.get());
         dropSelf(ModBlocks.FLESH_CHEST.get());
+        dropSelf(ModBlocks.NEPHROLITH_BLOCK.get());
 
         //blocks that don't drop themselves
         dropOther(ModBlocks.TILLED_FLESH.get(), BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath("biomesoplenty","flesh")));
@@ -38,8 +39,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.IRON_DEPOSIT.get(),
                 block -> createOreDrop(ModBlocks.IRON_DEPOSIT.get(), Items.RAW_IRON.asItem()));
 
+        add(ModBlocks.NEPHROLITH_CLUSTER.get(),
+                block -> createOreDrop(ModBlocks.NEPHROLITH_CLUSTER.get(), ModItems.NEPHROLITH_SHARD.get()));
+
+
         //blocks that drop with Silk Touch
-        //dropWhenSilkTouch(ModBlocks.IRON_DEPOSIT.get());
+        dropWhenSilkTouch(ModBlocks.SMALL_NEPHROLITH_BUD.get());
+        dropWhenSilkTouch(ModBlocks.MEDIUM_NEPHROLITH_BUD.get());
+        dropWhenSilkTouch(ModBlocks.LARGE_NEPHROLITH_BUD.get());
+
+        add(ModBlocks.BUDDING_NEPHROLITH.get(),
+                block -> noDrop());
 
         //"crops"
         LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.HAIR_GROWTH.get())
@@ -47,6 +57,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.HAIR_GROWTH.get(), this.createCropDrops(ModBlocks.HAIR_GROWTH.get(),
                 ModItems.HAIR_STRAND.get(), ModItems.HAIR_FOLLICLES.get(), lootItemConditionBuilder));
     }
+
 
     @Override
     protected @NotNull Iterable<Block> getKnownBlocks() {

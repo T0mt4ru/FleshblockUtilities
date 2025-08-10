@@ -34,12 +34,20 @@ public class ModCreativeModeTab {
                         output.accept(ModItems.CORPUSITE_INGOT);
                         output.accept(ModItems.KERATITE_INGOT);
 
+                        output.accept(ModItems.NEPHROLITH_SHARD);
+
                         output.accept(ModBlocks.DETRITUS_BLOCK);
                         output.accept(ModBlocks.FLESH_CRAFTING_TABLE);
                         output.accept(ModBlocks.TILLED_FLESH);
                         output.accept(ModBlocks.IRON_DEPOSIT);
 
                         output.accept(ModBlocks.DRYING_RACK);
+                        output.accept(ModBlocks.BUDDING_NEPHROLITH);
+                        output.accept(ModBlocks.SMALL_NEPHROLITH_BUD);
+                        output.accept(ModBlocks.MEDIUM_NEPHROLITH_BUD);
+                        output.accept(ModBlocks.LARGE_NEPHROLITH_BUD);
+                        output.accept(ModBlocks.NEPHROLITH_CLUSTER);
+                        output.accept(ModBlocks.NEPHROLITH_BLOCK);
 
                         output.accept(ModItems.HAIR_FOLLICLES);
 
