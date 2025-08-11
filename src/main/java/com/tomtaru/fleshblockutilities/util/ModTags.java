@@ -15,6 +15,9 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_DETRITUS_TOOL = createTag("needs_detritus_tool");
         public static final TagKey<Block> INCORRECT_FOR_DETRITUS_TOOL = createTag("incorrect_for_detritus_tool");
+        public static final TagKey<Block> NEEDS_NEPHROLITH_TOOL = createTag("needs_nephrolith_tool");
+        public static final TagKey<Block> INCORRECT_FOR_NEPHROLITH_TOOL = createTag("incorrect_for_nephrolith_tool");
+
         public static final TagKey<Block> FLESH_DEPOSIT_REPLACEABLES = createTag("flesh_deposit_replaceables");
 
         // Methods

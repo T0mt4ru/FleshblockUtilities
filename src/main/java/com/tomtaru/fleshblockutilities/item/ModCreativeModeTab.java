@@ -35,6 +35,13 @@ public class ModCreativeModeTab {
                         output.accept(ModItems.KERATITE_INGOT);
 
                         output.accept(ModItems.NEPHROLITH_SHARD);
+                        output.accept(ModItems.NEPHROLITH_AXE);
+                        output.accept(ModItems.NEPHROLITH_HOE);
+                        output.accept(ModItems.NEPHROLITH_PICKAXE);
+                        output.accept(ModItems.NEPHROLITH_SHOVEL);
+                        output.accept(ModItems.NEPHROLITH_SWORD);
+
+                        output.accept(ModItems.BOOGER);
 
                         output.accept(ModBlocks.DETRITUS_BLOCK);
                         output.accept(ModBlocks.FLESH_CRAFTING_TABLE);

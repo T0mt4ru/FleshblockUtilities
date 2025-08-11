@@ -9,4 +9,7 @@ import net.neoforged.neoforge.common.SimpleTier;
 public class ModToolTier {
     public static final Tier DETRITUS = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_DETRITUS_TOOL,
     60, 4f, 3f, 28, () -> Ingredient.of(ModItems.DETRITUS_INGOT));
+
+    public static final Tier NEPHROLITH = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_NEPHROLITH_TOOL,
+    120, 5f, 4f, 38, () -> Ingredient.of(ModItems.NEPHROLITH_SHARD));
 }

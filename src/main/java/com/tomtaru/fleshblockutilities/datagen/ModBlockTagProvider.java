@@ -8,6 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagEntry;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -45,15 +46,37 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         //Modded Tags
         tag(ModTags.Blocks.NEEDS_DETRITUS_TOOL)
                 .addTag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.IRON_DEPOSIT.get());
+                .add(ModBlocks.IRON_DEPOSIT.get())
+                .add(ModBlocks.NEPHROLITH_CLUSTER.get());
 
         tag(ModTags.Blocks.INCORRECT_FOR_DETRITUS_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_STONE_TOOL)
                 .remove(ModTags.Blocks.NEEDS_DETRITUS_TOOL);
 
+        tag(ModTags.Blocks.NEEDS_NEPHROLITH_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_NEPHROLITH_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_NEPHROLITH_TOOL);
+
         tag(ModTags.Blocks.FLESH_DEPOSIT_REPLACEABLES)
-                .add(TagEntry.element(ResourceLocation.fromNamespaceAndPath("biomesoplenty", "flesh")))
-                .add(TagEntry.element(ResourceLocation.fromNamespaceAndPath("minecraft", "dirt")))
-                .add(TagEntry.element(ResourceLocation.fromNamespaceAndPath("minecraft", "stone")));
+                .add(TagEntry.element(ResourceLocation.fromNamespaceAndPath("biomesoplenty", "flesh")));
+
+        tag(Tags.Blocks.BUDDING_BLOCKS)
+                .add(ModBlocks.BUDDING_NEPHROLITH.get());
+
+        tag(Tags.Blocks.BUDS)
+                .add(ModBlocks.SMALL_NEPHROLITH_BUD.get())
+                .add(ModBlocks.MEDIUM_NEPHROLITH_BUD.get())
+                .add(ModBlocks.LARGE_NEPHROLITH_BUD.get());
+
+        tag(Tags.Blocks.CLUSTERS)
+                .add(ModBlocks.NEPHROLITH_CLUSTER.get());
+
+        tag(Tags.Blocks.ORES_IRON)
+                .add(ModBlocks.IRON_DEPOSIT.get());
+
+
     }
 }

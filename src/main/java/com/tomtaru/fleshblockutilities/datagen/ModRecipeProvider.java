@@ -8,6 +8,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
@@ -129,6 +130,64 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("##")
                 .define('#', ModItems.NEPHROLITH_SHARD.get())
                 .unlockedBy("has_nephrolith_shard", has(ModItems.NEPHROLITH_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NEPHROLITH_HOE.get())
+                .pattern(" ##")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('#', ModItems.NEPHROLITH_SHARD.get())
+                .define('I', ModItems.GRISTLE.get())
+                .unlockedBy("has_nephrolith", has(ModItems.NEPHROLITH_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NEPHROLITH_AXE.get())
+                .pattern(" ##")
+                .pattern(" I#")
+                .pattern(" I ")
+                .define('#', ModItems.NEPHROLITH_SHARD.get())
+                .define('I', ModItems.GRISTLE.get())
+                .unlockedBy("has_nephrolith", has(ModItems.NEPHROLITH_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NEPHROLITH_PICKAXE.get())
+                .pattern("###")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('#', ModItems.NEPHROLITH_SHARD.get())
+                .define('I', ModItems.GRISTLE.get())
+                .unlockedBy("has_nephrolith", has(ModItems.NEPHROLITH_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NEPHROLITH_SWORD.get())
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" I ")
+                .define('#', ModItems.NEPHROLITH_SHARD.get())
+                .define('I', ModItems.GRISTLE.get())
+                .unlockedBy("has_nephrolith", has(ModItems.NEPHROLITH_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NEPHROLITH_SHOVEL.get())
+                .pattern(" # ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('#', ModItems.NEPHROLITH_SHARD.get())
+                .define('I', ModItems.GRISTLE.get())
+                .unlockedBy("has_nephrolith", has(ModItems.NEPHROLITH_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.BOOGER.get())
+                .pattern("#")
+                .define('#', Items.SLIME_BLOCK)
+                .unlockedBy("has_booger", has(ModItems.BOOGER))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, Items.SLIME_BLOCK.asItem())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModItems.BOOGER.get())
+                .unlockedBy("has_booger", has(ModItems.BOOGER))
                 .save(recipeOutput);
 
     }

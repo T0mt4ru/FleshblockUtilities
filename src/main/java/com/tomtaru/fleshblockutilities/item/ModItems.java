@@ -2,6 +2,7 @@ package com.tomtaru.fleshblockutilities.item;
 
 import com.tomtaru.fleshblockutilities.FleshblockUtilities;
 import com.tomtaru.fleshblockutilities.block.ModBlocks;
+import com.tomtaru.fleshblockutilities.custom.item.ModFoodProperties;
 import com.tomtaru.fleshblockutilities.custom.item.ModToolTier;
 import de.cech12.bucketlib.api.item.UniversalBucketItem;
 import net.minecraft.core.component.DataComponents;
@@ -59,8 +60,34 @@ public class ModItems {
     public static final DeferredItem<Item> KERATITE_INGOT = ITEMS.register("keratite_ingot",
             () -> new Item(new Item.Properties()));
 
+    // Nephrolith components
+
     public static final DeferredItem<Item> NEPHROLITH_SHARD = ITEMS.register("nephrolith_shard",
             () -> new Item(new Item.Properties()));
+
+    // Nephrolith tools
+    public static final DeferredItem<ShovelItem> NEPHROLITH_SHOVEL = ITEMS.register("nephrolith_shovel",
+            () -> new ShovelItem(ModToolTier.NEPHROLITH, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTier.NEPHROLITH,1.5f,-3.0f))));
+
+    public static final DeferredItem<AxeItem> NEPHROLITH_AXE = ITEMS.register("nephrolith_axe",
+            () -> new AxeItem(ModToolTier.NEPHROLITH, new  Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTier.NEPHROLITH,7,-3.2f))));
+
+    public static final DeferredItem<SwordItem> NEPHROLITH_SWORD = ITEMS.register("nephrolith_sword",
+            () -> new SwordItem(ModToolTier.NEPHROLITH, new  Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTier.NEPHROLITH,3,-2.4f))));
+
+    public static final DeferredItem<PickaxeItem> NEPHROLITH_PICKAXE = ITEMS.register("nephrolith_pickaxe",
+            () -> new PickaxeItem(ModToolTier.NEPHROLITH, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTier.NEPHROLITH,1.0f,-2.8f))));
+
+    public static final DeferredItem<HoeItem> NEPHROLITH_HOE = ITEMS.register("nephrolith_hoe",
+            () -> new HoeItem(ModToolTier.NEPHROLITH, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTier.NEPHROLITH,-1f,-2.0f))));
+
+    public static final DeferredItem<Item> BOOGER = ITEMS.register("booger",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BOOGER)));
 
     // "Seed" items
     public static final DeferredItem<Item> HAIR_FOLLICLES = ITEMS.register("hair_follicles",

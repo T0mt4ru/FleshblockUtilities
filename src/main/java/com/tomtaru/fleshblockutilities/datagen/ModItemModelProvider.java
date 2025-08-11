@@ -21,11 +21,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CORPUSITE_INGOT.get());
         basicItem(ModItems.KERATITE_INGOT.get());
         basicItem(ModItems.NEPHROLITH_SHARD.get());
+        basicItem(ModItems.BOOGER.get());
 
         handheldItem(ModItems.DETRITUS_AXE.get());
         handheldItem(ModItems.DETRITUS_PICKAXE.get());
         handheldItem(ModItems.DETRITUS_SWORD.get());
         handheldItem(ModItems.DETRITUS_HOE.get());
         handheldItem(ModItems.DETRITUS_SHOVEL.get());
+
+        handheldItem(ModItems.NEPHROLITH_AXE.get());
+        handheldItem(ModItems.NEPHROLITH_PICKAXE.get());
+        handheldItem(ModItems.NEPHROLITH_SWORD.get());
+        handheldItem(ModItems.NEPHROLITH_HOE.get());
+        handheldItem(ModItems.NEPHROLITH_SHOVEL.get());
     }
 }

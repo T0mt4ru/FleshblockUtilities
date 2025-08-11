@@ -14,7 +14,7 @@ import net.minecraft.world.level.material.Fluids;
 
 public class BuddingNephrolithBlock extends BuddingAmethystBlock {
     public static final MapCodec<BuddingNephrolithBlock> CODEC = simpleCodec(BuddingNephrolithBlock::new);
-    public static final int GROWTH_CHANCE = 5;
+    public static final int GROWTH_CHANCE = 3;
     private static final Direction[] DIRECTIONS = Direction.values();
 
     @Override
