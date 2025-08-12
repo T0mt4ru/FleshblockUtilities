@@ -1,8 +1,9 @@
 {
-  "itemGroup.fleshblockutilities": "Example Mod Tab",
+  "itemGroup.fleshblockutilities": "Fleshblock Utilities",
 
   "item.fleshblockutilities.detritus_nugget": "Detritus Nugget",
   "item.fleshblockutilities.detritus_ingot": "Detritus Ingot",
+  "item.fleshblockutilities.detritus_lump": "Detritus Lump",
   "item.fleshblockutilities.detritus_axe": "Detritus Axe",
   "item.fleshblockutilities.detritus_hoe": "Detritus Hoe",
   "item.fleshblockutilities.detritus_pickaxe": "Detritus Pickaxe",
@@ -14,10 +15,13 @@
   "item.fleshblockutilities.detritus_bucket.filled": "Filled Detritus Bucket",
   "item.fleshblockutilities.detritus_bucket.entity": "Detritus Bucket",
   "item.fleshblockutilities.hair_follicles": "Hair Follicles",
+  "item.fleshblockutilities.stomach_germs": "Stomach Germs",
   "item.fleshblockutilities.hair_strand": "Hair Strand",
   "item.fleshblockutilities.keratite_ingot": "Keratite Ingot",
   "item.fleshblockutilities.corpusite_ingot": "Corpusite Ingot",
   "item.fleshblockutilities.nephrolith_shard": "Nephrolith Shard",
+  "item.fleshblockutilities.nephrolith_sheet": "Nephrolith Sheet",
+  "item.fleshblockutilities.nephrolith_dust": "Nephrolith Dust",
   "item.fleshblockutilities.nephrolith_ingot": "Nephrolith Ingot",
   "item.fleshblockutilities.nephrolith_axe": "Nephrolith Axe",
   "item.fleshblockutilities.nephrolith_hoe": "Nephrolith Hoe",
@@ -25,6 +29,7 @@
   "item.fleshblockutilities.nephrolith_shovel": "Nephrolith Shovel",
   "item.fleshblockutilities.nephrolith_sword": "Nephrolith Sword",
   "item.fleshblockutilities.booger": "Booger",
+  "item.fleshblockutilities.stem_cell": "Stem Cell",
 
   "block.fleshblockutilities.hair_follicles": "Hair Growth",
   "block.fleshblockutilities.tilled_flesh": "Tilled Flesh",

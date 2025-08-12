@@ -95,6 +95,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> HAIR_GROWTH = registerBlock("hair_growth",
             () -> new HairGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
 
+    public static final DeferredBlock<Block> STOMACH_GROWTH = registerBlock("stomach_growth",
+            () -> new StomachGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

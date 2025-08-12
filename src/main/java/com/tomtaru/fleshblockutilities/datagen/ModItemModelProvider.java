@@ -16,12 +16,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.GRISTLE.get());
         basicItem(ModItems.DETRITUS_NUGGET.get());
         basicItem(ModItems.DETRITUS_INGOT.get());
+        basicItem(ModItems.DETRITUS_LUMP.get());
         basicItem(ModItems.HAIR_FOLLICLES.get());
         basicItem(ModItems.HAIR_STRAND.get());
         basicItem(ModItems.CORPUSITE_INGOT.get());
         basicItem(ModItems.KERATITE_INGOT.get());
         basicItem(ModItems.NEPHROLITH_SHARD.get());
+        basicItem(ModItems.NEPHROLITH_SHEET.get());
+        basicItem(ModItems.NEPHROLITH_DUST.get());
         basicItem(ModItems.BOOGER.get());
+        basicItem(ModItems.STEM_CELL.get());
+        basicItem(ModItems.STOMACH_GERMS.get());
 
         handheldItem(ModItems.DETRITUS_AXE.get());
         handheldItem(ModItems.DETRITUS_PICKAXE.get());

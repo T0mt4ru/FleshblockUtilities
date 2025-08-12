@@ -2,6 +2,7 @@ package com.tomtaru.fleshblockutilities.item;
 
 import com.tomtaru.fleshblockutilities.FleshblockUtilities;
 import com.tomtaru.fleshblockutilities.block.ModBlocks;
+import com.tomtaru.fleshblockutilities.custom.item.BoogerItem;
 import com.tomtaru.fleshblockutilities.custom.item.ModFoodProperties;
 import com.tomtaru.fleshblockutilities.custom.item.ModToolTier;
 import de.cech12.bucketlib.api.item.UniversalBucketItem;
@@ -20,12 +21,19 @@ public class ModItems {
     public static final DeferredItem<Item> HAIR_STRAND = ITEMS.register("hair_strand",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> STEM_CELL = ITEMS.register("stem_cell",
+            () -> new Item(new Item.Properties()));
+
 //Detritus components
     public static final DeferredItem<Item> DETRITUS_NUGGET = ITEMS.register("detritus_nugget",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> DETRITUS_INGOT = ITEMS.register("detritus_ingot",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> DETRITUS_LUMP = ITEMS.register("detritus_lump",
+            () -> new Item(new Item.Properties()));
+
 //Detritus tools
     public static final DeferredItem<ShovelItem> DETRITUS_SHOVEL = ITEMS.register("detritus_shovel",
             () -> new ShovelItem(ModToolTier.DETRITUS, new Item.Properties()
@@ -65,6 +73,12 @@ public class ModItems {
     public static final DeferredItem<Item> NEPHROLITH_SHARD = ITEMS.register("nephrolith_shard",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> NEPHROLITH_SHEET = ITEMS.register("nephrolith_sheet",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> NEPHROLITH_DUST = ITEMS.register("nephrolith_dust",
+            () -> new Item(new Item.Properties()));
+
     // Nephrolith tools
     public static final DeferredItem<ShovelItem> NEPHROLITH_SHOVEL = ITEMS.register("nephrolith_shovel",
             () -> new ShovelItem(ModToolTier.NEPHROLITH, new Item.Properties()
@@ -87,11 +101,14 @@ public class ModItems {
                     .attributes(HoeItem.createAttributes(ModToolTier.NEPHROLITH,-1f,-2.0f))));
 
     public static final DeferredItem<Item> BOOGER = ITEMS.register("booger",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.BOOGER)));
+            () -> new BoogerItem(new Item.Properties().food(ModFoodProperties.BOOGER)));
 
     // "Seed" items
     public static final DeferredItem<Item> HAIR_FOLLICLES = ITEMS.register("hair_follicles",
             () -> new ItemNameBlockItem(ModBlocks.HAIR_GROWTH.get(), new  Item.Properties()));
+
+    public static final DeferredItem<Item> STOMACH_GERMS = ITEMS.register("stomach_germs",
+            () -> new ItemNameBlockItem(ModBlocks.STOMACH_GROWTH.get(), new  Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

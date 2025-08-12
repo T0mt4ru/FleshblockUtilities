@@ -52,10 +52,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> noDrop());
 
         //"crops"
-        LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.HAIR_GROWTH.get())
+        LootItemCondition.Builder lootItemConditionBuilderHair = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.HAIR_GROWTH.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(HairGrowthBlock.AGE, 3));
         this.add(ModBlocks.HAIR_GROWTH.get(), this.createCropDrops(ModBlocks.HAIR_GROWTH.get(),
-                ModItems.HAIR_STRAND.get(), ModItems.HAIR_FOLLICLES.get(), lootItemConditionBuilder));
+                ModItems.HAIR_STRAND.get(), ModItems.HAIR_FOLLICLES.get(), lootItemConditionBuilderHair));
+
+        LootItemCondition.Builder lootItemConditionBuilderStomach = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.STOMACH_GROWTH.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(HairGrowthBlock.AGE, 7));
+        this.add(ModBlocks.STOMACH_GROWTH.get(), this.createCropDrops(ModBlocks.STOMACH_GROWTH.get(),
+                BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("macabre", "stomach")), ModItems.STOMACH_GERMS.get(), lootItemConditionBuilderStomach));
     }
 
 

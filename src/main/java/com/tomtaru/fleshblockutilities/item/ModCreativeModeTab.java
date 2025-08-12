@@ -21,6 +21,7 @@ public class ModCreativeModeTab {
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(ModItems.DETRITUS_NUGGET);
                         output.accept(ModItems.DETRITUS_INGOT);
+                        output.accept(ModItems.DETRITUS_LUMP);
                         output.accept(ModItems.DETRITUS_AXE);
                         output.accept(ModItems.DETRITUS_BUCKET);
                         output.accept(ModItems.DETRITUS_HOE);
@@ -35,6 +36,8 @@ public class ModCreativeModeTab {
                         output.accept(ModItems.KERATITE_INGOT);
 
                         output.accept(ModItems.NEPHROLITH_SHARD);
+                        output.accept(ModItems.NEPHROLITH_SHEET);
+                        output.accept(ModItems.NEPHROLITH_DUST);
                         output.accept(ModItems.NEPHROLITH_AXE);
                         output.accept(ModItems.NEPHROLITH_HOE);
                         output.accept(ModItems.NEPHROLITH_PICKAXE);
@@ -42,6 +45,7 @@ public class ModCreativeModeTab {
                         output.accept(ModItems.NEPHROLITH_SWORD);
 
                         output.accept(ModItems.BOOGER);
+                        output.accept(ModItems.STEM_CELL);
 
                         output.accept(ModBlocks.DETRITUS_BLOCK);
                         output.accept(ModBlocks.FLESH_CRAFTING_TABLE);
@@ -57,6 +61,7 @@ public class ModCreativeModeTab {
                         output.accept(ModBlocks.NEPHROLITH_BLOCK);
 
                         output.accept(ModItems.HAIR_FOLLICLES);
+                        output.accept(ModItems.STOMACH_GERMS);
 
                     }).build()
     );

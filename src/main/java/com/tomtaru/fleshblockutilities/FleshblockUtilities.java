@@ -14,7 +14,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
@@ -32,6 +34,8 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
+
+import java.util.Random;
 
 // My classes
 
@@ -130,6 +134,14 @@ public class FleshblockUtilities {
                 if (event.getContext().getClickedFace() != Direction.DOWN) {
                     event.setFinalState(ModBlocks.TILLED_FLESH.get().defaultBlockState());
                     event.setCanceled(false);
+                }
+                if (!level.isClientSide) {
+                    Random random = new Random();
+                    if (random.nextFloat() < 0.1f) {
+                        ItemStack stemCellStack = new ItemStack(ModItems.STEM_CELL.get());
+                        ItemEntity stemCell = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, stemCellStack);
+                        level.addFreshEntity(stemCell);
+                    }
                 }
             }
         }
