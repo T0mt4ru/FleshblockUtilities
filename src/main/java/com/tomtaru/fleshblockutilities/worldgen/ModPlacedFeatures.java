@@ -17,6 +17,8 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> IRON_DEPOSIT_PLACED_KEY = registerKey("iron_deposit_placed");
     public static final ResourceKey<PlacedFeature> BUDDING_NEPHROLITH_PLACED_KEY = registerKey("budding_nephrolith_placed");
+    public static final ResourceKey<PlacedFeature> CORPUS_NODE_PLACED_KEY = registerKey("corpus_node_placed");
+    public static final ResourceKey<PlacedFeature> FAT_DEPOSIT_PLACED_KEY = registerKey("fat_deposit_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
 
@@ -26,7 +28,13 @@ public class ModPlacedFeatures {
                 ModOrePlacement.commonOrePlacement(7, HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(49))));
 
         register(context, BUDDING_NEPHROLITH_PLACED_KEY, configuresFeatures.getOrThrow(ModConfiguredFeatures.BUDDING_NEPHROLITH_KEY),
-                ModOrePlacement.commonOrePlacement(8, HeightRangePlacement.triangle(VerticalAnchor.absolute(50), VerticalAnchor.absolute(100))));
+                ModOrePlacement.commonOrePlacement(7, HeightRangePlacement.triangle(VerticalAnchor.absolute(50), VerticalAnchor.absolute(100))));
+
+        register(context, CORPUS_NODE_PLACED_KEY, configuresFeatures.getOrThrow(ModConfiguredFeatures.CORPUS_NODE_KEY),
+                ModOrePlacement.commonOrePlacement(5, HeightRangePlacement.uniform(VerticalAnchor.absolute(24), VerticalAnchor.absolute(100))));
+
+        register(context, FAT_DEPOSIT_PLACED_KEY, configuresFeatures.getOrThrow(ModConfiguredFeatures.FAT_BLOCK_KEY),
+                ModOrePlacement.commonOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(25))));
 
     }
 

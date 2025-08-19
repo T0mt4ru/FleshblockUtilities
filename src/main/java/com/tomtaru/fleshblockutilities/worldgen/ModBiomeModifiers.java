@@ -15,6 +15,8 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_IRON_DEPOSIT = registerKey("add_iron_deposit");
     public static final ResourceKey<BiomeModifier> ADD_BUDDING_NEPHROLITH = registerKey("add_budding_nephrolith");
+    public static final ResourceKey<BiomeModifier> ADD_CORPUS_NODE = registerKey("add_corpus_node");
+    public static final ResourceKey<BiomeModifier> ADD_FAT_DEPOSIT = registerKey("add_fat_deposit");
 
     public static void  bootstrap(BootstrapContext<BiomeModifier> context) {
 
@@ -29,6 +31,16 @@ public class ModBiomeModifiers {
         context.register(ADD_BUDDING_NEPHROLITH, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(ModTags.Biomes.IS_THULMARU),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.BUDDING_NEPHROLITH_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_CORPUS_NODE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(ModTags.Biomes.IS_THULMARU),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CORPUS_NODE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_FAT_DEPOSIT, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(ModTags.Biomes.IS_THULMARU),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FAT_DEPOSIT_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

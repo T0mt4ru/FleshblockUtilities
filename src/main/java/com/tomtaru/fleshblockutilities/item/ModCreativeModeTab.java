@@ -51,8 +51,11 @@ public class ModCreativeModeTab {
                         output.accept(ModBlocks.FLESH_CRAFTING_TABLE);
                         output.accept(ModBlocks.TILLED_FLESH);
                         output.accept(ModBlocks.IRON_DEPOSIT);
+                        output.accept(ModBlocks.CORPUS_NODE);
+                        output.accept(ModBlocks.FAT_DEPOSIT);
 
                         output.accept(ModBlocks.DRYING_RACK);
+
                         output.accept(ModBlocks.BUDDING_NEPHROLITH);
                         output.accept(ModBlocks.SMALL_NEPHROLITH_BUD);
                         output.accept(ModBlocks.MEDIUM_NEPHROLITH_BUD);
@@ -62,6 +65,12 @@ public class ModCreativeModeTab {
 
                         output.accept(ModItems.HAIR_FOLLICLES);
                         output.accept(ModItems.STOMACH_GERMS);
+                        output.accept(ModItems.BRAIN_GERMS);
+                        output.accept(ModItems.KIDNEY_GERMS);
+                        output.accept(ModItems.LIVER_GERMS);
+                        output.accept(ModItems.LUNG_GERMS);
+                        output.accept(ModItems.INTESTINAL_GERMS);
+                        output.accept(ModItems.HEART_GERMS);
 
                     }).build()
     );

@@ -25,6 +25,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         //blockWithItem(ModBlocks.FLESH_CRAFTING_TABLE);
         blockWithItem(ModBlocks.DETRITUS_BLOCK);
 
+
         // "crops"
         makeCrop(((CropBlock) ModBlocks.HAIR_GROWTH.get()), "hair_growth_stage", "hair_growth_stage");
 

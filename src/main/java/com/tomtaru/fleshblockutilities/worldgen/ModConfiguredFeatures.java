@@ -16,18 +16,26 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
 public class ModConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?,?>> IRON_DEPOSIT_KEY = registerKey("iron_deposit");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> IRON_DEPOSIT_KEY = registerKey("iron_deposit");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BUDDING_NEPHROLITH_KEY = registerKey("budding_nephrolith");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CORPUS_NODE_KEY = registerKey("corpus_node");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FAT_BLOCK_KEY = registerKey("fat_block");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
         RuleTest   fleshReplaceables = new TagMatchTest(ModTags.Blocks.FLESH_DEPOSIT_REPLACEABLES);
 
         register(context, IRON_DEPOSIT_KEY, Feature.ORE, new OreConfiguration(fleshReplaceables,
-                ModBlocks.IRON_DEPOSIT.get().defaultBlockState(), 5));
+                ModBlocks.IRON_DEPOSIT.get().defaultBlockState(), 4));
 
         register(context, BUDDING_NEPHROLITH_KEY, Feature.ORE, new OreConfiguration(fleshReplaceables,
-                ModBlocks.BUDDING_NEPHROLITH.get().defaultBlockState(), 5));
+                ModBlocks.BUDDING_NEPHROLITH.get().defaultBlockState(), 3));
+
+        register(context, CORPUS_NODE_KEY, Feature.ORE, new OreConfiguration(fleshReplaceables,
+            ModBlocks.CORPUS_NODE.get().defaultBlockState(), 4));
+
+        register(context, FAT_BLOCK_KEY, Feature.ORE, new OreConfiguration(fleshReplaceables,
+            ModBlocks.FAT_DEPOSIT.get().defaultBlockState(), 5));
 
     }
 

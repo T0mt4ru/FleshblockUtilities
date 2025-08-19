@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "fleshblockutilities:block/corpus_node"
+      },
+      {
+        "model": "fleshblockutilities:block/corpus_node",
+        "y": 90
+      },
+      {
+        "model": "fleshblockutilities:block/corpus_node",
+        "y": 180
+      },
+      {
+        "model": "fleshblockutilities:block/corpus_node",
+        "y": 270
+      }
+    ]
+  }
+}

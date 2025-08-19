@@ -110,6 +110,24 @@ public class ModItems {
     public static final DeferredItem<Item> STOMACH_GERMS = ITEMS.register("stomach_germs",
             () -> new ItemNameBlockItem(ModBlocks.STOMACH_GROWTH.get(), new  Item.Properties()));
 
+    public static final DeferredItem<Item> BRAIN_GERMS = ITEMS.register("brain_germs",
+            () -> new ItemNameBlockItem(ModBlocks.BRAIN_GROWTH.get(), new  Item.Properties()));
+
+    public static final DeferredItem<Item> LIVER_GERMS = ITEMS.register("liver_germs",
+            () -> new ItemNameBlockItem(ModBlocks.LIVER_GROWTH.get(), new  Item.Properties()));
+
+    public static final DeferredItem<Item> HEART_GERMS = ITEMS.register("heart_germs",
+            () -> new ItemNameBlockItem(ModBlocks.HEART_GROWTH.get(), new  Item.Properties()));
+
+    public static final DeferredItem<Item> KIDNEY_GERMS = ITEMS.register("kidney_germs",
+            () -> new ItemNameBlockItem(ModBlocks.KIDNEY_GROWTH.get(), new  Item.Properties()));
+
+    public static final DeferredItem<Item> LUNG_GERMS = ITEMS.register("lung_germs",
+            () -> new ItemNameBlockItem(ModBlocks.LUNG_GROWTH.get(), new  Item.Properties()));
+
+    public static final DeferredItem<Item> INTESTINAL_GERMS = ITEMS.register("intestinal_germs",
+            () -> new ItemNameBlockItem(ModBlocks.INTESTINAL_GROWTH.get(), new  Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

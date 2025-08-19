@@ -97,17 +97,27 @@ public class FleshblockUtilities {
             event.accept(ModItems.DETRITUS_SWORD);
             event.accept(ModItems.DETRITUS_SHEARS);
 
+            event.accept(ModItems.NEPHROLITH_AXE);
+            event.accept(ModItems.NEPHROLITH_HOE);
+            event.accept(ModItems.NEPHROLITH_PICKAXE);
+            event.accept(ModItems.NEPHROLITH_SHOVEL);
+            event.accept(ModItems.NEPHROLITH_SWORD);
+
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.GRISTLE);
             event.accept(ModItems.DETRITUS_INGOT);
             event.accept(ModItems.DETRITUS_NUGGET);
             event.accept((ModItems.HAIR_STRAND));
+            event.accept(ModItems.NEPHROLITH_DUST);
+            event.accept(ModItems.NEPHROLITH_SHEET);
+            event.accept(ModItems.NEPHROLITH_SHARD);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TILLED_FLESH);
             event.accept(ModBlocks.FLESH_CRAFTING_TABLE);
             event.accept(ModBlocks.DETRITUS_BLOCK);
+            event.accept(ModBlocks.NEPHROLITH_BLOCK);
         }
 
     }

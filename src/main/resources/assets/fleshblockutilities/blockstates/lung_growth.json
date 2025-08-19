@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "fleshblockutilities:block/lung_growth_stage0"
+    },
+    "age=1": {
+      "model": "fleshblockutilities:block/lung_growth_stage1"
+    },
+    "age=2": {
+      "model": "fleshblockutilities:block/lung_growth_stage2"
+    },
+    "age=3": {
+      "model": "fleshblockutilities:block/lung_growth_stage3"
+    },
+    "age=4": {
+      "model": "fleshblockutilities:block/lung_growth_stage4"
+    },
+    "age=5": {
+      "model": "fleshblockutilities:block/lung_growth_stage5"
+    },
+    "age=6": {
+      "model": "fleshblockutilities:block/lung_growth_stage6"
+    },
+    "age=7": {
+      "model": "fleshblockutilities:block/lung_growth_stage7"
+    }
+  }
+}

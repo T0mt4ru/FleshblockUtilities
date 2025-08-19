@@ -53,6 +53,22 @@ public class ModBlocks {
                     .sound(SoundType.MUD)
                     .pushReaction(PushReaction.NORMAL)));
 
+    public static final DeferredBlock<Block> CORPUS_NODE = registerBlock("corpus_node",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.COLOR_RED)
+                    .strength(1.6F)
+                    .sound(SoundType.MUD_BRICKS)
+                    .pushReaction(PushReaction.NORMAL)));
+
+    public static final DeferredBlock<Block> FAT_DEPOSIT = registerBlock("fat_deposit",
+            () -> new DropExperienceBlock(UniformInt.of(1, 3), BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .strength(1.8F)
+                    .sound(SoundType.MUD)
+                    .pushReaction(PushReaction.NORMAL)));
+
     public static final DeferredBlock<AmethystClusterBlock> SMALL_NEPHROLITH_BUD = registerBlock("small_nephrolith_bud",
             () -> new AmethystClusterBlock(3, 4, BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD)));
 
@@ -97,6 +113,24 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> STOMACH_GROWTH = registerBlock("stomach_growth",
             () -> new StomachGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    public static final DeferredBlock<Block> BRAIN_GROWTH = registerBlock("brain_growth",
+            () -> new BrainGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    public static final DeferredBlock<Block> LIVER_GROWTH = registerBlock("liver_growth",
+            () -> new LiverGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    public static final DeferredBlock<Block> HEART_GROWTH = registerBlock("heart_growth",
+            () -> new HeartGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    public static final DeferredBlock<Block> KIDNEY_GROWTH = registerBlock("kidney_growth",
+            () -> new KidneyGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    public static final DeferredBlock<Block> LUNG_GROWTH = registerBlock("lung_growth",
+            () -> new LungGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    public static final DeferredBlock<Block> INTESTINAL_GROWTH = registerBlock("intestinal_growth",
+            () -> new IntestinalGrowthBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

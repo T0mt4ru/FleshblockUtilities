@@ -27,6 +27,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.BOOGER.get());
         basicItem(ModItems.STEM_CELL.get());
         basicItem(ModItems.STOMACH_GERMS.get());
+        basicItem(ModItems.BRAIN_GERMS.get());
+        basicItem(ModItems.LIVER_GERMS.get());
+        basicItem(ModItems.HEART_GERMS.get());
+        basicItem(ModItems.KIDNEY_GERMS.get());
+        basicItem(ModItems.LUNG_GERMS.get());
+        basicItem(ModItems.INTESTINAL_GERMS.get());
 
         handheldItem(ModItems.DETRITUS_AXE.get());
         handheldItem(ModItems.DETRITUS_PICKAXE.get());
